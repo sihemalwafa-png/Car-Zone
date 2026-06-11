@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CarZone</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <h1 class="carzone"> <span class="car">Car</span>Zone</h1>
+        </div>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="#Home">الرئيسيه</a></li>
+                <li><a href="#Cars">السيارات</a></li>
+                <li><a href="#Favorites">المفضله</a></li>
+                <li><a href="#About-us">عنا</a></li>
+                <li><a href="#Contact-Us">تواصل معنا</a></li>
+            </ul>
+        </nav>
+        
+        <div class="buttons">
+            <button class="light-dark" id="themeToggle"><img src="images/moon.png" alt="light-dark"></button>
+            <button class="sign-up">تسجيل الدخول</button>
+        </div>
+    </div>
+</header>
+
+       <section id="Home">
+        <div class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">أفضل السيارات<br>بأفضل الأسعار</h1>
+                <p class="hero-desc">تصفح مئات السيارات بعناية<br>وابحث عن سيارتك المثالية الآن</p>
+                <button class="browse-cars-btn">تصفح السيارات</button>
+            </div>
+        </div>
+        
+        <div class="search-filter-wrapper">
+            <div class="search-car-box">
+                <button class="search-submit-btn">بحث</button>
+                <div class="input-group">
+                    <label>السعر الأقصى</label>
+                    <select><option>اختر السعر</option></select>
+                </div>
+                <div class="input-group">
+                    <label>السعر الأدنى</label>
+                    <select><option>اختر السعر</option></select>
+                </div>
+                <div class="input-group">
+                    <label>السنة</label>
+                    <select><option>اختر السنة</option></select>
+                </div>
+                <div class="input-group">
+                    <label>النوع</label>
+                    <select><option>اختر النوع</option></select>
+                </div>
+                <div class="input-group">
+                    <label>ابحث عن سيارة</label>
+                    <input type="text" placeholder="اكتب اسم السيارة">
+                </div>
+            </div>
+        </div>
+
+        <div class="under-section">
+            <div class="section-header">
+                <h2>سيارات مميزة</h2>
+                <a href="#" class="view-all">عرض الكل +</a>
+            </div>
+                
+                <div class="cars-grid"> 
+                    <!-- بطاقة السيارة 1 -->
+                    <div class="car-card" data-id="toyota">
+                        <div class="car-img">
+                            <img src="images/t.png" alt="toyota car">
+                            <button class="heart-btn"><img src="images/heart.png" alt="love"></button>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Toyota Camry 2026</h3> 
+                            <div class="car-footer">
+                                <span class="car-price">$20,000</span>
+                                <span class="car-year">2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                  
+                    <div class="car-card" data-id="G-Class">
+                        <div class="car-img">
+                            <img src="images/g.png" alt="G-Class">
+                            <button class="heart-btn"><img src="images/heart.png" alt="love"></button>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">G-Class 2026</h3>
+                            <div class="car-footer">
+                                <span class="car-price">$90,000</span>
+                                <span class="car-year">2026</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="car-card" data-id="Mercedes-AMG">
+                        <div class="car-img">
+                            <img src="images/mr.png" alt="Mercedes-AMG G63">
+                            <button class="heart-btn"><img src="images/heart.png" alt="love"></button>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Mercedes-AMG G63 2026</h3>
+                            <div class="car-footer">
+                                <span class="car-price">$90,000</span>
+                                <span class="car-year">2026</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="car-card" data-id="Hyundai">
+                        <div class="car-img">
+                            <img src="images/h.png" alt="Hyundai Sonata 2026">
+                            <button class="heart-btn"><img src="images/heart.png" alt="love"></button>
+                        </div>
+                        <div class="car-info">
+                            <h3 class="car-name">Hyundai Sonata 2026</h3>
+                            <div class="car-footer">
+                                <span class="car-price">$90,000</span>
+                                <span class="car-year">2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+        <div class="site-features"> <!-- تم تغيير التسمية لتكون أدق -->
+            <div class="container">
+                <div class="feature-col">
+                    <h3>ضمان الجودة</h3>
+                    <p>جميع السيارات مضمونة<br>ومفحوصة بدقة</p>
+                </div>
+                <div class="feature-col">
+                    <h3>أفضل الأسعار</h3>
+                    <p>نقدم لك أفضل الأسعار <br>في السوق</p>
+                </div>
+                <div class="feature-col">
+                    <h3>دعم 24/7</h3>
+                    <p>فريق الدعم جاهز لمساعدتك<br>في أي وقت</p>
+                </div>
+                <div class="feature-col">
+                    <h3>شراء آمن</h3>
+                    <p>عملية شراء آمنة <br>وسهلة ومضمونة</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <section id="Cars">
+        <div class="herocontent">
+            <div class="h">
+              <h1>المعرض الشامل للسيارات</h1>
+              <p>تصفح وقارن بين مئات الموديلات المتاحه</p>
+            </div>
+            <div class="contaner">
+                <div class="text-section">
+                  <div class="breadcrumb">
+                    <span>الرئيسية</span>
+                    <span>></span>
+                    <span class="active">سيارات</span>
+                  </div>
+
+                  <h2>أكثر من ثمان سيارات</h2>
+                </div>
+                <div class="sort">
+                    <label>ترتيب حسب</label>
+                    <select>
+                        <option>الأحدث</option>
+                        <option>الأقدم</option>
+                        <option>الأرخص</option>
+                        <option>الأغلى</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cars-grad">
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/ro.png" alt="Rolls-Royce">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Rolls-Royce Spectre 2025</h3>
+                        <div class="car-footer">
+                            <span class="car-price">20,000 $</span>
+                            <span class="car-year">2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/le.png" alt="Lexus LX 600">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Lexus LX 600 2024</h3>
+                        <div class="car-footer">
+                            <span class="car-price">100,000 $</span>
+                            <span class="car-year">2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/bmw.png" alt="BMW 8">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">BMW 8 2026</h3>
+                        <div class="car-footer">
+                            <span class="car-price">80,000 $</span>
+                            <span class="car-year">2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/ra.png" alt="Range Rover 2026">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Range Rover 2026</h3>
+                        <div class="car-footer">
+                            <span class="car-price">110,000 $</span>
+                            <span class="car-year">2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/t.png" alt="toyota car">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Toyoya Camary 2026</h3>
+                        <div class="car-footer">
+                            <span class="car-price">20,000 $</span>
+                            <span class="car-year">2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/po.png" alt="Porsche 911 GT3">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Porsche 911 GT3 2026</h3>
+                        <div class="car-footer">
+                            <span class="car-price">66,000 $</span>
+                            <span class="car-year">2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/mr.png" alt="Mercedes-AMG G63">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Mercedes-AMG G63 2026</h3>
+                        <div class="car-footer">
+                            <span class="car-price">70,000 $</span>
+                            <span class="car-year">2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-img">
+                        <img src="images/h.png" alt="Hyundai Sonata 2026">
+                        <button class="heart"><img src="images/heart.png" alt="love"></button>
+                    </div>
+                    <div class="car-info">
+                        <h3 class="car-name">Hyundai Sonata 2026</h3>
+                        <div class="car-footer">
+                            <span class="car-price">99,000 $</span>
+                            <span class="car-year">2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <!-- قسم المفضلة -->
+    <section id="Favorites">
+     
+        <div class="f">
+            <h2>سياراتك المفضلة</h2>
+            <p>السيارات التي قمت بإضافتها لمفضلتك للرجوع إليها لاحقاً</p>
+        </div>
+
+        <!-- حاوية شبكة السيارات المفضلة الموحدة -->
+        <div class="container">
+            <div class="favorites-container cars-grad">
+                <!-- ملاحظة: عندما يقوم المستخدم بالضغط على قلب أي سيارة، 
+                     ستظهر بطاقة السيارة هنا تلقائياً عبر الجافا سكريبت مستقبلاً -->
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="About-us">
+        <div class="about-us">
+            <div class="picture">
+                <img src="images/about.png" alt="About us">
+            </div>
+            <div class="us">
+                <h1>عنا</h1>
+                <h2>من نحن؟</h2>
+                <p>CarZone هو منصه الكترونيه رائدة لبيع وشراء السيارات في الشرق الاوسط
+                    .نسعى لتسهيل عملية البحث والاختيار للمستخدمين وتوفير تجربة امنه وشفافه بفضل 
+                    شبكتنا الواسعه من الشركاء وفريقنا المتخصص.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact-Us">
+        <div class="conect-us">
+            <div class="conect">
+                <h2>اتصل بنا</h2>
+            </div>
+                        <form class="conect-form" id="contactForm" novalidate>
+                <div class="input-group">
+                    <label>الاسم الكامل</label>
+                    <input type="text" id="userName" placeholder="الاسم الكامل">
+                    <span class="error-msg"></span> <!-- هنا ستظهر رسالة الخطأ -->
+                </div>
+                <div class="input-group">
+                    <label>البريد الألكتروني</label>
+                    <input type="email" id="userEmail" placeholder="Info@carzone.com">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="input-group">
+                    <label>رقم الهاتف</label>
+                    <input type="tel" id="userPhone" placeholder="7144XXXXX">
+                    <span class="error-msg"></span>
+                </div>
+                <div class="input-group">
+                    <label>رسالتك</label>
+                    <textarea id="userMessage" placeholder="اكتب رسالتك"></textarea>
+                    <span class="error-msg"></span>
+                </div>
+                <div class="input-group">
+                    <button type="submit" class="bt-send">ارسال</button>
+                </div>
+            </form>
+
+            
+        </div>
+
+    </section>
+<script src="js/main.js"></script>  
+</body>
+</html>
