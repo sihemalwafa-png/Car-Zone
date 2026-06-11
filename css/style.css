@@ -1078,3 +1078,34 @@ body.dark-mode #Cars .breadcrumb {
     border-color: #ff4d4d !important;
     box-shadow: 0 0 5px rgba(255, 77, 77, 0.3) !important;
 }
+
+
+
+/* ==========================================================================
+   تنسيق فوتر الموقع السفلي (Main Footer)
+   ========================================================================== */
+.main-footer {
+    background-color: #0b1222 !important; /* لون كحلي أغمق قليلاً من الفلتر ليعطي تدرجاً فخماً */
+    color: #94a3b8 !important; /* لون رمادي فاتح مريح للعين */
+    text-align: center !important;
+    padding: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important; /* ملء عرض الشاشة بالكامل من الحافة للحافة */
+    margin: 0 !important;
+    border-top: 1px solid #1e293b !important; /* خط علوي نحيف يفصله عن قسم اتصل بنا */
+    direction: rtl !important;
+}
+
+.main-footer p {
+    margin: 0 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* توافق الفوتر مع الوضع الداكن */
+body.dark-mode .main-footer {
+    background-color: #090d16 !important;
+    border-top-color: #111827 !important;
+}
+
